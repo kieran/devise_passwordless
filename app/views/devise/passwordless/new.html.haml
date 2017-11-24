@@ -1,0 +1,10 @@
+%h2 Send me an magick link
+
+=form_for resource, as: resource_name, url: url_for([resource, :passwordless, :index]), html: {:method => :post} do |f|
+
+  %p
+    =f.label 'email'
+    =f.text_field 'email'
+
+  %p
+    =f.submit
